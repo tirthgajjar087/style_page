@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display pra</title>
+    <style>
+        ul{
+            /* background-color:blueviolet; */
+            text-align:end;
+            /* float: right; */
+            /* justify-content: ce; */
+        }
+        ul li{
+            display: inline-block;
+            text-align: right;
+            /* background-color: brown; */
+            padding: 10px 40px;
+            margin-right: 10px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        pq{
+            display:inline-block;
+            color: rgb(20, 39, 218);
+        }
+        button{
+
+            background-color: darkblue;
+            color:white;
+            margin-right: 0px;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 20px;
+        }
+        span{
+            background-color: rgb(209, 20, 13);
+            color: white;
+            
+        }
+        .test{
+            background-color:burlywood;
+            padding: 30px;
+            /* display:flex; */
+            /* justify-content: space-between; */
+            border: 1px solid black;
+        }
+        .main_testing{
+            display: flex;
+            justify-content:center;
+            /* flex-direction: row-reverse; */
+            align-items: start;
+            /* flex-wrap: wrap; */
+            /* gap: 110px;     */
+            /* order:3;     */
+        }
+        
+        .main_testing div:nth-child(2) {
+            align-self: flex-end;
+        }
+        .main_testing div:nth-child(3) {
+            order: 0;
+        }
+        /* .flex-growed {
+            flex-wrap: wrap; 
+             flex-grow: 1;
+        } */
+
+
+        .img_box{
+            width: 70%;
+            padding: 20px;
+            border-radius: 20px;
+            height: 100%;
+            background-color: rgb(236, 235, 235);
+        }
+        .sec_img{
+            display: flex;
+            gap:50px;
+            /* padding: 30px; */
+            margin: 50px 00px;
+        }
+            .img_box img{
+                background-color: rgb(195, 195, 201);
+                padding: 50px;
+                float: right;
+                border-radius: 50px;
+                margin: 80px 15px 0px 15px;
+                /* margin: 30px 40px 0px 40px o !important; */
+
+        }
+        
+        .sec_img h4{
+            /* background-color: rgb(223, 223, 223); */
+            padding: 10px;
+            width: 350px;
+            color:black ;
+            font-size: 30px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .sec_img .img_box p{
+            /* width: 370px; */
+            /* background-color: rgb(223, 223, 223); */
+            /* margin-left: 30px; */
+            color:black ;
+            text-align: justify;
+        }
+
+        .check_position{
+            position: relative;
+            background-color:rgb(231, 216, 216);
+        }
+
+        
+        .check_position div{
+            border: 1px solid black;
+            color:blue;
+            padding: 10px;
+            position: relative;
+            top:40px;
+        }
+        
+        .check_position box-2{
+            position:absolute ;
+            top: 0px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns:repeat(6,auto);
+            gap:10px
+        }
+
+        .container .box{
+            padding:30px;
+            margin-top: 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+            background-color: lightgray;
+            color: black;
+            font-weight: 600;
+            border: 1px solid black;
+        }
+        .container #box-1{
+            background-color: aqua;
+            
+
+        }
+
+        .transition_style{
+            background-color: rgb(54, 95, 95);
+            width: 10%;
+            color:white;
+            font-weight: 600;
+            padding: 30px;
+            height: 20%;
+            border-radius: 10px;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            transition-timing-function: linear; */
+            transition: all 1s linear 1s;
+        }
+
+        .transition_style:hover{
+            width: 15%;
+            height: 20%;
+        }
+
+        .transform_style{
+            margin:auto;
+            width: 40%;
+            height: 150px;
+            border: 1px solid light gray;
+            border-radius: 10px;
+            background-color: skyblue;
+            /* padding: 20px; */
+        }
+
+        .transform_box{
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            align-items: center; 
+            background-color:yellow;
+            width: 20%;
+            height: 70px;
+            transition: all 1s ease 0.5s;
+            transform: translateX(-40px) translateY(-20px);
+            /* transform: scaleY(1.2) translatex(-40px) translateY(-20px);     */
+        }
+        .transform_box:hover{
+            /* transform:translateX(50px) rotate(180deg); */
+            /* transform: rotate(180deg); */
+            /* border-radius: 80%; */
+            transform: translateX(0px) translateY(0px);
+            background-color: rgb(238, 31, 4);
+        }
+
+        .animation_style{
+            border: 1px solid blue;
+            margin: auto;
+            width: 40%;
+            height: 180px;
+            margin-top: 20px;
+            
+          
+        }
+        
+        .animation_box{
+            animation-direction: normal;
+            animation-name:trail_1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: infinite;
+            padding: 10px;
+            background-color:aqua;
+            width: 20%;
+            height: 70px;
+            border-radius: 10px;
+        }
+
+        .dot{
+            width: 10px;
+            height: 10px;
+            background-color:blue;
+            border-radius: 50%;
+            margin: 10px;
+            display:inline-block;
+            align-items: center;
+            animation: dot_animation 0.5s ease infinite alternate;
+        }
+
+        .dot:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        .dot:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        
+        .dot:nth-child(3){
+            animation-delay: 0.4s;
+        }
+
+        .dot:nth-child(4){
+            animation-delay: 0.6s;
+        }
+
+        @keyframes dot_animation {
+            from{
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes orbit {
+            from{
+                transform: rotate(0deg);
+            }   
+            to{
+                transform: rotate(360deg);
+            }         
+        }
+
+       
+        @keyframes trail_1 {
+            0%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translate(391px,0px);
+            }
+            50%{
+                transform: translate(391px,90px) rotate(180deg);
+
+            }
+            75%{
+                transform: translate(0px,90px) rotate(90deg);
+            }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav style="display:flex;  justify-content:space-around;border-bottom: 1px solid lightgray;">
+        <!-- <div style="display:inline;">
+            <span>Hey</span>
+        </div> -->
+        <!-- <li>Applocum</li> -->
+        <div>
+            <p style="margin-top: 20px;font-size: 25px;color:darkblue;font-weight: 600;">Applocum</p>
+        </div>
+        
+        <ul>
+            <input type="search" id="site-search" name="q" />
+
+
+           <li> <a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button>Login</button>
+            <button >Sign up</button>
+
+    </nav>
+<section class="sec_img">
+    <div class="img_box">
+        <img src="img/user1.png" width="90" height="90">
+            <h4 class="profile_style">Profile</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe autem obcaecati sint culpa maxime ea tempora rerum fugiat suscipit voluptatum excepturi eos quidem, commodi, velit, deleniti ab natus molestiae consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum labore ipsa facere sint. Enim ut eligendi, veniam mollitia excepturi cum numquam odio quo non consequuntur veritatis necessitatibus maxime blanditiis assumenda!</p>
+         
+    </div>
+    <div class="img_box">
+        <img src="img/user1.png" width="90" height="90">
+            <h4 class="profile_style">Profile</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe autem obcaecati sint culpa maxime ea tempora rerum fugiat suscipit voluptatum excepturi eos quidem, commodi, velit, deleniti ab natus molestiae consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum labore ipsa facere sint. Enim ut eligendi, veniam mollitia excepturi cum numquam odio quo non consequuntur veritatis necessitatibus maxime blanditiis assumenda!</p>
+         
+    </div>
+</section>
+
+<section class="check_position">
+    <div class="box-1">wrapper 1</div>
+    <div class="box-2">wrappper 2</div>
+</section>
+
+<section class="container">
+    <div class="box" id="box-1">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box5</div>
+    <div class="box">Box6</div>
+    <div class="box">Box7</div>
+    <div class="box">Box8</div>
+
+
+</section>
+
+    <div class="main_testing">
+        <div class="test">1</div>
+        <div class="test flex-growed">2</div>
+        <div class="test">3</div>
+        <div class="test">4</div>
+        <div class="test flex-growed">5</div>
+        <div class="test">6</div>
+        <div class="test">7</div>
+        <div class="test flex-growed">8</div>
+        <div class="test">9</div>
+        
+
+    </div>
+
+<section>
+    <div class="transition_style">Hey!</div>
+    <div></div>
+</section>
+
+<section class="transform_style">
+    <div class="transform_box">Box</div>
+</section>
+ 
+<section class="animation_style">
+    <div class="animation_box"></div>
+
+</section>
+
+<section>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</section>
+    
+</body>
+</html>

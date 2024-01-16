@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design_3</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+    <style>
+        
+        .main_plant{
+            display: flex;
+            flex-direction: row;
+        }
+        .main_plant{
+            border-radius: 32px;
+            background: #F4F4F4;
+            background-image:url(img/Blob.png);
+            background-repeat: no-repeat;
+            padding: 90px;
+        }
+        .left_side_det{
+            width: 50% ;
+            position: relative;
+        }
+        .left_side_det img{
+            position: absolute;
+            z-index: 0;
+        }
+        .right_side_det{
+            width: 50%;
+        }
+        .main_det{
+            z-index: 1;
+        }
+        .left_side_det h2{
+            color: #333;
+            /* z-index: 1; */
+            width:541px;
+            position: relative;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 61px; /* 127.083% */
+            letter-spacing: 0.48px;
+        }
+
+        .left_side_det p{
+            /* z-index: 2; */
+            width: 541px;
+            color: #252525;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+        }
+        .btn_more_explore{
+            background-color: black;
+            color:white;
+            padding: 20px 40px;
+            z-index: 3;
+
+            border-radius: 20px;
+            border: none;
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    
+<section class="main_plant">
+
+    <div class="left_side_det">
+        <!-- <img src="img/Blob.png"> -->
+        <div class="main_det">
+        
+            <h2>Love your plants Take care of yourself</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed est doloremque inventore illo at distinctio.
+            </p>
+            <button class="btn_more_explore">Explore all plants</button>
+        </div>
+               
+
+    </div>
+    <div class="right_side_det"></div>
+
+</section>
+
+
+
+</body>
+</html>

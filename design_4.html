@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design_4</title>
+</head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #c9c8c8;
+        }
+
+        .main_card_design{
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+            flex-direction: column;
+        }
+        .card_style{
+            background-color: #ffffff;
+           
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 27%;
+            height: 210px;
+            border-radius: 10px;
+            padding: 10px;
+            position: relative;
+            transition: all 1s;
+        }
+        .card_style:hover{
+            height: 300px;
+            visibility: visible;
+            transition: all 1s;
+            /* opacity: 1; */
+        }
+       
+
+        .card_style .img_box{
+            position: relative;
+            width: 50%;
+            top: -40px;
+            z-index: 1;
+            left:35px;
+            padding: 0px;
+            img{
+                width: 160%;
+                border-radius: 14px;
+                align-items: center;
+
+            }
+        }
+
+        .card_content{
+            display: absolute;
+            width: 23%;
+            opacity: 0.6;
+            /* visibility: hidden; */
+            /* display: none; */
+            padding: 0px 0px;
+            transform: translateY(-330px );
+
+            h2{
+                font-size: 25px;
+                font-weight: 800;
+                color: chocolate;
+                margin-bottom: 14px;
+            }
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+
+        .card_style:hover> .card_content{
+            /* margin-top: 40px; */
+            /* opacity: 1; */
+            transform: translateY(-380px);
+            /* visibility:visible;   */
+            display: block;
+        }
+
+  
+
+        
+
+        
+    </style>
+<body>
+    
+<section class="main_card_design">
+
+   <div class="card_style">
+        <div class="img_box">
+            <img src="img/card_1.png">
+            
+        </div>
+    </div>
+    <div class="card_content">
+
+        <h2>Keep smiling</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel rem quod, totam ea, voluptate, ad maxime corrupti repellat ipsa id.</p>
+        
+    </div>
+    </div>
+   
+   </div>
+</section>
+
+</body>
+</html>
