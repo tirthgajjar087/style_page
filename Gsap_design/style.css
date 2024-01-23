@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: 'poppins';
+    font-size: 14px;
+    background-color: #8c6c79;
+}
+
+.product_img{
+    position: absolute;
+    width: 900px;
+    top:22%;
+    left: 18%;
+    z-index: 1;
+}
+
+.product_text{
+    position: absolute;
+    /* width: 900px; */
+    top:2%;
+    font-weight: 900;
+    left: 12.5%;
+    text-align: center;
+    font-size: 140px;
+    color: rgb(255 246 120);
+    z-index: 0;
+}
+
+.product_desc p{
+    position: absolute;
+    /* width: 900px; */
+    top:2%;
+    left:20%;
+    color: rgb(235, 235, 235);
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 20px;
+
+}
+
+.product_desc button{
+    position: absolute;
+    background-color:  rgb(255 246 120);
+    color: black;
+    padding: 12px 55px;
+    font-size: 17px;
+    top:85%;
+    font-weight: 600;
+    
+    left:40%;
+    border-radius: 10px;
+    border: none;
+    /* border: 1px solid white; */
+}
+
+.first {
+    top: 0;
+}
+
+.second {
+    top: 33.3%;
+}
+
+.third {
+    top: 66.6%;
+}

@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        .main_dashboard_section{
+            display: grid;
+            grid-template-columns: repeat(4,300px);
+            gap:30px;
+            grid-template-areas: 
+            "one two three four"
+            "five six six seven"
+            "eig six six seven"
+            "nine ten ele twe"
+            
+          
+        }
+        .dash_box_style{
+            border: 1px solid rgb(199, 199, 199);
+            border-radius: 5px;
+            padding: 10px;
+            height: 120px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        
+        #box-1{
+            grid-area: one;
+        }
+        #box-2{
+            grid-area: two;
+            
+        }
+        #box-3{
+            grid-area: three;
+            
+        }
+        #box-4{
+            grid-area: four;
+            
+        }
+        #box-5{
+            grid-area: five;
+            height: 205.9px;
+        }
+        #box-6{
+            grid-area: six;
+            height: 463px;
+        }
+        #box-7{
+            grid-area: seven;
+            height: 463px;
+        }
+        #box-8{
+            grid-area: eig;
+            height: 205.9px;
+        }
+        #box-9{
+            grid-area: nine;
+            
+        }
+        #box-10{
+            grid-area: ten;
+            
+        }
+        #box-11{
+            grid-area: ele;
+            
+        } #box-12{
+            grid-area: twe;
+            
+        }
+/* 
+        #box-5,#box-8{
+            grid-column: 1/2;
+            height: 205.9px;
+        }
+        
+        #box-6{
+            grid-column: 2/4;
+            grid-row: 2/4;
+            height: 463px;
+        }
+        #box-7{
+            grid-column: 4/5;
+            grid-row: 2/4;
+            height: 463px;
+        } */
+    </style>
+</head>
+<body>
+
+<section class="main_dashboard_section">
+    <div class="dash_box_style" id="box-1">1</div>
+    <div class="dash_box_style"  id="box-2">2</div>
+    <div class="dash_box_style"  id="box-3">3</div>
+    <div class="dash_box_style"  id="box-4">4</div>
+    <div class="dash_box_style"  id="box-5">5</div>
+    <div class="dash_box_style"  id="box-6">6</div>
+    <div class="dash_box_style"  id="box-7">7</div>
+    <div class="dash_box_style"  id="box-8">8</div>
+    <div class="dash_box_style" id="box-9">9</div>
+    <div class="dash_box_style" id="box-10">10</div>
+    <div class="dash_box_style" id="box-11">11</div>
+    <div class="dash_box_style" id="box-12">12</div>
+</section>
+
+</body>
+</html>

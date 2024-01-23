@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Founder;
+    src: url(FoundersGroteskCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: CardinalR;
+    src: url(cardinalfruitweb-regular.ttf);
+}
+
+@font-face {
+    font-family: Cardinali;
+    src: url(cardinalfruitweb-italic.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+.main_first{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+
+}
+.main_second{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}

@@ -57,11 +57,11 @@
         .card_content{
             display: absolute;
             width: 23%;
-            opacity: 0.6;
+            /* opacity: 0; */
             /* visibility: hidden; */
-            /* display: none; */
+            display: none;
             padding: 0px 0px;
-            transform: translateY(-330px );
+            transform: translateY(-130px );
 
             h2{
                 font-size: 25px;
@@ -75,12 +75,10 @@
             }
         }
 
-        .card_style:hover> .card_content{
-            /* margin-top: 40px; */
-            /* opacity: 1; */
-            transform: translateY(-380px);
-            /* visibility:visible;   */
-            display: block;
+        .card_style:hover .card_content{
+            opacity: 0.9;
+            display: inline;
+           /* transform: translateY(900px); */
         }
 
   
