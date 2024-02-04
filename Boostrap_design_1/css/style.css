@@ -506,6 +506,7 @@ body {
 
 
 .team_box_style .card .card-header {
+
     background-color: #FFF !important;
 }
 
@@ -554,8 +555,8 @@ body {
 
 
 .contact_us_form {
-    width: 1320px;
-    background: var(--Grey, #F3F3F3) url("../img/contact_us.png") no-repeat 980px;
+    width: 100%;
+    background: var(--Grey, #F3F3F3) url("../img/contact_us.png") no-repeat 880px;
     background-size: 43%;
     /* background-repeat: no-repeat; */
     /* background-repeat: repeat-y; */
@@ -638,7 +639,6 @@ body {
         border-radius: 45px;
         border: 1px solid #191A23;
         background: #FFF;
-        bor
         box-shadow: 0px 5px 0px 0px #191A23;
     }
 
@@ -646,6 +646,9 @@ body {
 
     .team_box_style .card .card-header {
         background-color: #FFF !important;
+
+
+
     }
 
     .team_box_style .card-header img {
@@ -663,7 +666,7 @@ body {
 
     .team_box_style .card-header .team_heading img {
         width: 34px;
-        margin-left: 150px;
+        margin-left: 120px;
         height: 34px;
     }
 
@@ -674,7 +677,7 @@ body {
     }
 
     .team_box_style .team_heading p {
-        font-size: 18px;
+        font-size: 15px;
         width: 200px;
     }
 
