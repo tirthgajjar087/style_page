@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap);
+
+        body {
+            /* background-image: url('img/Layer 4.png'); */
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+            align-items: center;
+            /* height: 100vh; */
+        }
+
+        table {
+            width: 602px;
+            border-collapse: collapse;
+            border: 1px solid #cccccc;
+            border-spacing: 0;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            text-align: center;
+        }
+
+        td {
+            padding: 0px;
+        }
+
+        p {
+            line-height: 2px;
+            font-family: 'Montserrat';
+        }
+
+        .header_poster {
+            margin: 100px 40px;
+            position: relative;
+            border-radius: 8px;
+            height: 400px;
+            text-align: center;
+            background-color: #c0c6f8;
+        }
+
+        .header_poster img {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+        }
+
+        .one_step_td p {
+            width: 478px;
+            font-size: 19px;
+            margin: 10px auto 40px auto;
+            line-height: 1.7rem;
+        }
+
+        .instant_access_div {
+            position: relative;
+            width: 250px;
+            height: 250px;
+
+            background-image: url(./img/Layer\ 1\ copy\ 2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .instant_access_div img {
+            position: absolute;
+            width: 158px;
+            top: -30px;
+            left: 46px;
+        }
+
+        .instant_access_text p {
+            line-height: 1.2rem;
+            margin-top: 30px;
+            width: 215px;
+            text-align: justify;
+        }
+
+
+        .apply_on_div {
+            background-image: url(./img/Layer\ 4.png);
+            background-color: darkblue;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 30px 40px 25px 40px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .apply_on_div h5 {
+            color: white;
+        }
+
+        .three_img {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .three_img img {
+            width: 200px;
+        }
+
+        .img_1 {
+            position: absolute;
+            left: -107px;
+            z-index: 3;
+        }
+
+        .img_2 {
+            position: absolute;
+            left: 8px;
+            top: 60px;
+            z-index: 2;
+        }
+
+        .img_3 {
+            position: relative;
+            left: 127px;
+            top: 110px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tbody>
+                <tr>
+                    <td style="margin-top: 20px;  background-image: linear-gradient(#c9cfff
+                    , white);">
+                        <img src="img/LOGO copy.png" width="240px" height="55px" style="margin: 35px 0px;">
+                        <p style="font-size: 19px;">Just spotted you've joined</p>
+                        <p style="font-size: 39px; color: rgb(107,129,206);font-weight: 700;">AppLocum</p>
+                        <p style="font-size: 20px;">awesome move!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="header_poster">
+                            <img src="img/main_header.png" width="100px">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="one_step_td">
+                        <p>You're one step away from unlocking the ultimate AppLocum experience. Haven't downloaded the
+                            app yet? Let's change that!
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/GOOGLE 2.png" alt="" width="140px">
+                        <img src="img/APP STORE 2.png" alt="" width="140px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 style="font-size: 20px; width: 340px; margin: 50px auto;color:#2a46e0">Why Do You Need to
+                            Have the AppLocum App?</h5>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="display: flex;justify-content: space-around;margin: 40px;">
+                        <div class="instant_access_div">
+                            <img src="img/Graphic1 copy 3.png" alt="">
+                        </div>
+
+                        <div class="instant_access_text">
+                            <p> <b>Instant Access Anytime, Anywhere:</b> Stay ahead with direct
+                                access to the hottest
+                                healthcare
+                                shifts. No more FOMO on those perfect gigs</p>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td style="display: flex;justify-content: space-around;margin: 40px;">
+
+
+                        <div class="instant_access_text">
+                            <p> <b>Custom Alerts Just for You:</b> Get notifications that vibe with your skills and
+                                preferences. It's like your personal job radar.</p>
+                        </div>
+                        <div class="instant_access_div">
+                            <img src="img/Graphic1 copy 2.png" alt="">
+                        </div>
+
+                    </td>
+
+                </tr>
+
+
+
+                <tr>
+                    <td class="apply_on_div">
+                        <p style="font-size: 35px;color: white;font-weight: 700;line-height: 0rem;">Apply on the Fly</>
+                        <p style="font-size: 20px;color: white;font-weight: 650;">Swipe, tap, apply-it's that easy.</>
+                        <div class="three_img">
+                            <img src="img/Light1.png" alt="" class="img_1">
+                            <img src="img/Light.png" alt="" class="img_2">
+                            <img src="img/MockUp - Edit Me copy.png" alt="" class="img_3">
+                        </div>
+                        <div style="margin-top:150px ">
+                            <button
+                                style="background-color: blue;color: white;border: none; font-size: 22px;padding: 7px 80px;font-weight: 600;">Dive
+                                in</button>
+                            <p style="color: white; font-size: 17px;margin-top: 32px;">Your next shift could be just a
+                                tap away</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="font-size: 19px;font-weight: 600;">Got questions or need a hand?</>
+                        <p style="width: 425px;line-height: 20px;margin: auto;font-size: 19px;">Our crew is here to back
+                            you up every
+                            step of the
+                            way.</p>
+
+                        <button
+                            style="border: 1px solid #2a46e0;background-color: transparent;font-size: 19px;padding: 7px 90px;margin: 35px auto;border-radius: 5px;">Hit
+                            Us
+                            Up</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="display: flex;justify-content: space-around;margin-bottom: 40px;">
+                        <div style="text-align: left;">
+                            <img src="img/LOGO copy.png" alt="" width="150px">
+                            <p style="line-height: 19px;text-align: left;">Clive House, Clive Street <br />Bolton BL11ET
+                            </p>
+                            <div style="margin-top: 27px;">
+                                <img src="img/GOOGLE 2.png" alt="" width="100px">
+                                <img src="img/APP STORE 2.png" alt="" width="100px">
+                            </div>
+                        </div>
+                        <div>
+                            <p style="width:200px;line-height: 20px;text-align: left;font-size: 16px;">You received this
+                                email because
+                                you signed up on
+                                our website.</p>
+                            <div style="text-align: left;">
+                                <a href="#">Unsubscribe</a>
+                            </div>
+                        </div>
+                    </td>
+
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
