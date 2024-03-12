@@ -4,31 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email Template</title>
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap);
 
-        body {
-            /* background-image: url('img/Layer 4.png'); */
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
         }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            border-radius: 8px;
-            align-items: center;
-            /* height: 100vh; */
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            font-family: Montserrat, sans-serif;
         }
 
         table {
-            width: 602px;
+            max-width: 602px;
+            margin: auto;
             border-collapse: collapse;
-            border: 1px solid #cccccc;
             border-spacing: 0;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
             text-align: center;
         }
 
@@ -41,59 +40,11 @@
             font-family: 'Montserrat';
         }
 
-        .header_poster {
-            margin: 100px 40px;
-            position: relative;
-            border-radius: 8px;
-            height: 400px;
-            text-align: center;
-            background-color: #c0c6f8;
-        }
-
-        .header_poster img {
-            position: absolute;
-            top: 50%;
-            left: 40%;
-            transform: translate(-50%, -50%);
-            width: 500px;
-            height: 500px;
-        }
-
-        .one_step_td p {
-            width: 478px;
-            font-size: 19px;
-            margin: 10px auto 40px auto;
-            line-height: 1.7rem;
-        }
-
-        .instant_access_div {
-            position: relative;
-            width: 250px;
-            height: 250px;
-
-            background-image: url(./img/Layer\ 1\ copy\ 2.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-
-        .instant_access_div img {
-            position: absolute;
-            width: 158px;
-            top: -30px;
-            left: 46px;
-        }
-
-        .instant_access_text p {
-            line-height: 1.2rem;
-            margin-top: 30px;
-            width: 215px;
-            text-align: justify;
-        }
 
 
         .apply_on_div {
             background-image: url(./img/Layer\ 4.png);
-            background-color: darkblue;
+            background-color: #000b43;
             background-repeat: no-repeat;
             background-size: contain;
             margin: 30px 40px 25px 40px;
@@ -108,173 +59,229 @@
         .apply_on_div h5 {
             color: white;
         }
-
-        .three_img {
-            position: relative;
-            margin-top: 20px;
-        }
-
-        .three_img img {
-            width: 200px;
-        }
-
-        .img_1 {
-            position: absolute;
-            left: -107px;
-            z-index: 3;
-        }
-
-        .img_2 {
-            position: absolute;
-            left: 8px;
-            top: 60px;
-            z-index: 2;
-        }
-
-        .img_3 {
-            position: relative;
-            left: 127px;
-            top: 110px;
-            z-index: 1;
-        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <table>
-            <tbody>
-                <tr>
-                    <td style="margin-top: 20px;  background-image: linear-gradient(#c9cfff
+    <table>
+        <tbody>
+            <tr>
+                <td style="margin-top: 20px;  background-image: linear-gradient(#c9cfff
                     , white);">
-                        <img src="img/LOGO copy.png" width="240px" height="55px" style="margin: 35px 0px;">
+                    <div>
+                        <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/email-template/applocum_logo.png"
+                            style="max-width: 43%;max-height: 240px; margin: 55px 0px 20px 0px;">
                         <p style="font-size: 19px;">Just spotted you've joined</p>
-                        <p style="font-size: 39px; color: rgb(107,129,206);font-weight: 700;">AppLocum</p>
+                        <p style="font-size: 39px; color:#2842dd;font-weight: 700;">AppLocum</p>
                         <p style="font-size: 20px;">awesome move!</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="header_poster">
-                            <img src="img/main_header.png" width="100px">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one_step_td">
-                        <p>You're one step away from unlocking the ultimate AppLocum experience. Haven't downloaded the
-                            app yet? Let's change that!
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="img/GOOGLE 2.png" alt="" width="140px">
-                        <img src="img/APP STORE 2.png" alt="" width="140px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h5 style="font-size: 20px; width: 340px; margin: 50px auto;color:#2a46e0">Why Do You Need to
-                            Have the AppLocum App?</h5>
-                    </td>
-                </tr>
+                    </div>
 
-                <tr>
-                    <td style="display: flex;justify-content: space-around;margin: 40px;">
-                        <div class="instant_access_div">
-                            <img src="img/Graphic1 copy 3.png" alt="">
-                        </div>
+                    <div>
+                        <img src="img/Group 10.png" alt="applocum_landing" style="max-width: 85%;margin-top: 45px;">
+                    </div>
+                </td>
+            </tr>
 
-                        <div class="instant_access_text">
-                            <p> <b>Instant Access Anytime, Anywhere:</b> Stay ahead with direct
-                                access to the hottest
-                                healthcare
-                                shifts. No more FOMO on those perfect gigs</p>
-                        </div>
+            <tr>
+                <td class="one_step_td">
+                    <p style=" width: 450px;
+                    font-size: 1rem;
+                    padding: 3% 10%;
+                    line-height: 1.7rem;">You're one step away from unlocking the ultimate AppLocum experience. Haven't
+                        downloaded the
+                        app yet? Let's change that!
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/Google_Play.jpg" href=""
+                        alt="google" width="140px">
+                    <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/App_Store.jpg" href=""
+                        alt="apple store" width="140px" style="margin-left: 15px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5 style="font-size: 20px; width: 340px; margin: 50px auto;color:#2a46e0">Why Do You Need to
+                        Have the AppLocum App? </h5>
+                </td>
+            </tr>
 
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <td style="display: flex;justify-content: space-around;margin: 40px;">
-
-
-                        <div class="instant_access_text">
-                            <p> <b>Custom Alerts Just for You:</b> Get notifications that vibe with your skills and
-                                preferences. It's like your personal job radar.</p>
-                        </div>
-                        <div class="instant_access_div">
-                            <img src="img/Graphic1 copy 2.png" alt="">
-                        </div>
-
-                    </td>
-
-                </tr>
+            <tr>
+                <td style="padding:10px 40px;">
+                    <table>
+                        <tr>
+                            <td style="width: 50% !important; ">
+                                <img src="img/Group 8.png" alt="" style=" max-width: 100% !important;
+                              
+                               ">
+                            </td>
+                            <td style="width: 50% !important;">
+                                <p style=" line-height: 1.5rem;
+                                padding-left: 30px;
+                                width: 240px !important;
+                                font-size: 16px;
+                                text-align: left;"> <b>Instant Access Anytime, Anywhere:</b> Stay ahead with direct
+                                    access to the hottest
+                                    healthcare
+                                    shifts. No more FOMO on those perfect gigs</p>
+                            </td>
+                        </tr>
+                    </table>
 
 
+                </td>
 
-                <tr>
-                    <td class="apply_on_div">
-                        <p style="font-size: 35px;color: white;font-weight: 700;line-height: 0rem;">Apply on the Fly</>
-                        <p style="font-size: 20px;color: white;font-weight: 650;">Swipe, tap, apply-it's that easy.</>
-                        <div class="three_img">
-                            <img src="img/Light1.png" alt="" class="img_1">
-                            <img src="img/Light.png" alt="" class="img_2">
-                            <img src="img/MockUp - Edit Me copy.png" alt="" class="img_3">
-                        </div>
-                        <div style="margin-top:150px ">
-                            <button
-                                style="background-color: blue;color: white;border: none; font-size: 22px;padding: 7px 80px;font-weight: 600;">Dive
-                                in</button>
-                            <p style="color: white; font-size: 17px;margin-top: 32px;">Your next shift could be just a
-                                tap away</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p style="font-size: 19px;font-weight: 600;">Got questions or need a hand?</>
-                        <p style="width: 425px;line-height: 20px;margin: auto;font-size: 19px;">Our crew is here to back
-                            you up every
-                            step of the
-                            way.</p>
+            </tr>
 
-                        <button
-                            style="border: 1px solid #2a46e0;background-color: transparent;font-size: 19px;padding: 7px 90px;margin: 35px auto;border-radius: 5px;">Hit
+            <tr>
+                <td style="padding:50px 40px;">
+
+                    <table>
+                        <tr>
+
+                            <td style="width:50% !important;">
+                                <p style=" line-height: 1.5rem;
+                                width: 240px;
+                                font-size: 16px;
+                                text-align: left;"><b>Custom Alerts Just for You:</b> Get notifications that vibe
+                                    with your skills and
+                                    preferences. It's like your personal job radar.</p>
+                            </td>
+
+                            <td style="width:50% !important">
+                                <img src="img/Group 7.png" alt="" style=" max-width: 100% !important;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+                <td class="apply_on_div">
+                    <p style="font-size: 35px;color: white;font-weight: 700;line-height: 0rem;">Apply on the Fly</>
+                    <p style="font-size: 20px;color: white;font-weight: 650;">Swipe, tap, apply-it's that easy.</>
+                    <div style=" margin-top: 30px;">
+                        <img src="img/Group 6.png" alt="" class="img_1" style="max-width: 88%;">
+                    </div>
+                    <div style="margin-top:40px ">
+                        <a href="#"
+                            style="text-decoration: none;   background-color: blue;color: white;border: none; font-size: 22px;padding: 10px 80px;font-weight: 600;border-radius: 5px;">Dive
+                            in</a>
+                        <p style="color: white; font-size: 17px;margin-top: 32px;">Your next shift could be just a
+                            tap away</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size: 1rem;font-weight: 600;">Got questions or need a hand?</>
+                    <p style="width: 425px;line-height: 20px;margin: auto;font-size: 1rem;">Our crew is here to back
+                        you up every
+                        step of the
+                        way.</p>
+                    <div style="margin: 45px auto;">
+
+                        <a href="#"
+                            style="text-decoration: none; border: 1px solid #2a46e0;background-color: transparent;font-size: 19px;padding: 7px 90px;margin: 35px auto;border-radius: 5px;">Hit
                             Us
-                            Up</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="display: flex;justify-content: space-around;margin-bottom: 40px;">
-                        <div style="text-align: left;">
-                            <img src="img/LOGO copy.png" alt="" width="150px">
-                            <p style="line-height: 19px;text-align: left;">Clive House, Clive Street <br />Bolton BL11ET
-                            </p>
-                            <div style="margin-top: 27px;">
-                                <img src="img/GOOGLE 2.png" alt="" width="100px">
-                                <img src="img/APP STORE 2.png" alt="" width="100px">
-                            </div>
-                        </div>
-                        <div>
-                            <p style="width:200px;line-height: 20px;text-align: left;font-size: 16px;">You received this
-                                email because
-                                you signed up on
-                                our website.</p>
-                            <div style="text-align: left;">
-                                <a href="#">Unsubscribe</a>
-                            </div>
-                        </div>
-                    </td>
+                            Up</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 40px 50px">
+                    <table style="background: #ffffff; width: 100%">
+                        <tr>
+                            <td width="50%" style="padding: 30px 2%;text-align: left;">
+                                <div>
+                                    <a href="#" style="display:inline-block;max-width: 75% !important">
+                                        <img src="https://www.applocum.com/wp-content/themes/applocum/images/logo_blue.png"
+                                            alt="LOGO" style="width: 95%;" />
+                                    </a>
+                                    <p style="font-size: 16px; font-weight: 400; color: #1a1a1a;line-height: 1rem;">
+                                        Clive House,Clive Street
+                                    </p>
+                                    <p style="font-size: 16px; font-weight: 400; color: #1a1a1a;line-height: 1.1rem;">
+                                        Bolton BL11ET
+                                    </p>
+                                    <div style="
+                      display: flex;
+                      max-width: 180px;
+                      margin-top: 20px;
+                    ">
+                                        <a href="#" style="display: inline-block; height: auto;margin-right: 8px;">
+                                            <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/Google_Play.jpg"
+                                                alt="PLAY STORE" style="width: 100%;" />
+                                        </a>
+                                        <a href="#" style="display: inline-block; height: auto;margin-right: 8px;">
+                                            <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/App_Store.jpg"
+                                                alt="APP STORE" style="width: 100%;" />
+                                        </a>
+                                    </div>
+                                    <div style="
+                      display: flex;
+                      justify-content: space-between;
+                      max-width: 171px !important;
+                      margin-top: 8px;
+                    ">
+                                        <a href="#" style="display: inline-block;width: 35px;margin-right: 20px;">
+                                            <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/email-template/facebook_icon.png"
+                                                alt="FACEBOOK" width="100%" />
+                                        </a>
+                                        <a href="#" style="display: inline-block;width: 35px;margin-right: 20px;">
+                                            <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/email-template/x_icon.png"
+                                                alt="TWITTER" width="100%" />
+                                        </a>
+                                        <a href="#" style="display: inline-block;width: 35px;margin-right: 20px;">
+                                            <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/email-template/instagram_icon.png"
+                                                alt="INSTRAGRAM" width="100%" />
+                                        </a>
+                                        <a href="#" style="display: inline-block;width: 35px;">
+                                            <img src="https://applocum-static-assets.s3.eu-west-2.amazonaws.com/images/email-template/linkedin_icon.png"
+                                                alt="LINKDIN" width="100%" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td width="50%" style="padding: 30px 2%" valign="top">
+
+                                <p style="
+                                  font-size: 1.1rem;
+                                  font-weight: 400;
+                                  color: #1a1a1a;
+                                  margin-top: 16px;
+                                  line-height: 1.4rem;
+                                  text-align: left;
+                                  margin-bottom: 40px;
+                                ">
+                                    You received this email <br />
+                                    because you signed up on <br />
+                                    our website.
+                                </p>
+                                <div style="width: 100%;text-align: left;">
+                                    <a href="#" style="
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    color: #1a1a1a;
+                                    text-decoration: underline !important;
+                                    text-underline-offset: 5px;
+                                  ">Unsubsribe</a>
+                                </div>
 
 
-                </tr>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-            </tbody>
-        </table>
-    </div>
 </body>
 
 </html>
